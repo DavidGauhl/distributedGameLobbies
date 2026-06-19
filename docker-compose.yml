@@ -1,0 +1,7 @@
+services:
+  zookeeper:
+    image: zookeeper:3.9
+    container_name: game-lobby-zookeeper
+    restart: unless-stopped
+    ports:
+      - "2181:2181"
